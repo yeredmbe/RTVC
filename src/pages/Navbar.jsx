@@ -3,7 +3,7 @@ import { useGSAP } from '@gsap/react'
 import { useState } from "react";
 import { ThemeSwitch } from "@/components/ui/theme-switch";
 import { Sun, Moon, Laptop } from "lucide-react";
-import { LucideSandwich } from 'lucide-react';
+import { AlignJustify } from 'lucide-react';
 
 
 const navLinks = [
@@ -74,8 +74,8 @@ const Navbar = () => {
       showInactiveIcons="all"
       className="max-sm:hidden"
     />
-   
-   <LucideSandwich className="max-sm:block hidden text-white" />
+   <AlignJustify className="max-sm:block hidden text-white" />
+
      </div>
     </nav>
  )
