@@ -56,7 +56,7 @@ export default function HeroSection() {
   return <div id="home" className={`relative w-full bg-black overflow-hidden flex flex-col items-center justify-center `}>
       <GridBackground />
      <div className="flex flex-row items-center justify-between w-5/6 max-sm:w-full  max-sm:flex-col-reverse  max-sm:justify-center">
-     <div className=" w-1/2 max-sm:w-full max-sm:flex max-sm:items-center max-sm:flex-col max-sm:justify-center">
+     <div className=" w-1/2 max-sm:w-full max-sm:mx-auto max-sm:flex max-sm:items-center max-sm:flex-col max-sm:justify-center">
       <div className="text-4xl font-bold text-white mb-2 max-sm:px-3 ">
       Bienvenue à la RTVC {" "}
       <FlipWords
