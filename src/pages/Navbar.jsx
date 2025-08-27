@@ -103,12 +103,14 @@ const menuRef = useRef(null);
          <div className='my-5'>
             <ul className=' self-start gap-7'>
          {navLinks.map((link) => (
+            <a href={`#${link.id}`} key={link.id}>
             <li onClick={() => {
    setIsOpen(!isOpen);
    setIsVisible(true);
-  }} key={link.id} className={`text-white flex items-center gap-2 py-4 hover:bg-black/35 hover:rounded-lg ${link.id==="contact" && "border-b border-gray-600"} py-2 border-t border-gray-600`}>
-            { link.icon} <a href={`#${link.id}`}>{link.title}</a>
+  }}  className={`text-white flex items-center gap-2 py-4 hover:bg-black/35 hover:rounded-lg ${link.id==="contact" && "border-b border-gray-600"} py-2 border-t border-gray-600`}>
+            { link.icon} {link.title}
             </li>
+            </a>
          ))}
         </ul>
          </div>
