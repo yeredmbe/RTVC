@@ -42,7 +42,7 @@ useEffect(() => {
 
   return (
     <>
-      <div className='fadeIn'>
+      <div className='fadeIn relative'>
         <Navbar/>
         <HeroSection/>
         <TvEnDirect/>
