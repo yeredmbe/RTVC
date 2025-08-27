@@ -4,7 +4,7 @@ import { TypingAnimation } from "@/components/magicui/typing-animation"
 
 const TvEnDirect = () => {
   return (
-     <div id='TV en direct' className="flex flex-col bg-black/95 items-center justify-center"> 
+     <div id='TV' className="flex flex-col bg-black/95 items-center justify-center"> 
         <TypingAnimation className="text-white text-4xl my-3 text-center max-sm:text-2xl font-bold" startOnView={true}>Redifussion de vos programmes</TypingAnimation>
     
      <p className='text-white text-center text-md my-3'>Suivez les programmes manque de la semaine</p>

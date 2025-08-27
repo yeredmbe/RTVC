@@ -70,7 +70,9 @@ export default function HeroSection() {
     <TextAnimate animation="blurIn" by="text" as="p" className="text-white mb-7 max-sm:mx-3">
      Un organisation basee dans plus the 150 nations.
     </TextAnimate>
+    <a href="#contact">
     <ShimmerButton className="my-4">Contactez Nous</ShimmerButton>
+    </a>
     </div>
         <Globe />
      </div>
