@@ -1,4 +1,4 @@
-'use client';
+
 
 import React from 'react';
 import { TextAnimate } from "@/components/magicui/text-animate";
@@ -157,6 +157,7 @@ function Apropo() {
             <Marquee logos={logos1} />
             <Marquee logos={logos2} direction="reverse" />
         </div>
+     
     </div>;
 }
 export default Apropo;
