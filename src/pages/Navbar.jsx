@@ -1,6 +1,6 @@
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react'
-import { useState,useRef } from "react";
+import { useState,useRef, useEffect } from "react";
 import { ThemeSwitch } from "@/components/ui/theme-switch";
 import { Sun, Moon, Laptop } from "lucide-react";
 import { AlignJustify, House, Radio, Tv, Contact, TableRowsSplit,X,PaintBucket
@@ -78,7 +78,7 @@ const [isOpen, setIsOpen] = useState(false);
 const [isVisible, setIsVisible] = useState(true)
 const [toggle, setToggle] = useState(false)
 const { theme, setTheme } = useStore();
-const menuRef = useRef(null);
+
   useGSAP(() => {
     const navTween = gsap.timeline({
      scrollTrigger: {
@@ -86,7 +86,7 @@ const menuRef = useRef(null);
         start: 'bottom top'
      }
     });
-    
+   
     navTween.fromTo('nav', { backgroundColor: 'transparent' }, {
      backgroundColor: '#00000050',
      backgroundFilter: 'blur(10px)',
@@ -94,6 +94,8 @@ const menuRef = useRef(null);
      ease: 'power1.inOut'
     });
   })
+
+  
  
  return (
     <nav  className='fixed top-0 left-0 w-full flex items-center py-4 justify-between z-40'>
@@ -147,7 +149,7 @@ const menuRef = useRef(null);
         </ul>
          </div>
     </div>
-{toggle && <div className="h-screen absolute top-4 right-4 max-sm:left-1 container mx-auto px-4 pt-20 max-w-5xl">
+{toggle && <div onClick={() => setToggle(false)} className="h-screen absolute top-4 right-4 max-sm:left-1 container mx-auto px-4 pt-20 max-w-5xl">
       <div className="space-y-6">
 {/* this is the theme switcher */}
        <div className=" bg-black p-4 rounded-lg grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-2">
