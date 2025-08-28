@@ -76,15 +76,15 @@ const Contact = () => {
   };
 
   return <>
-  <div id="contact" className='w-full bg-black flex flex-col items-center justify-center '>
+  <div  id="contact" className='w-full  flex flex-col items-center justify-center '>
     <div className="w-5/6 flex items-center justify-between max-sm:flex-col-reverse max-sm:items-center ">
       <div className="flex items-center justify-center p-6">
         <div className="w-full max-w-sm relative">
           {}
-          <div ref={cardRef} className="relative bg-black dark:bg-white border border-gray-700 rounded-lg p-6 shadow-sm transition-all duration-200 hover:shadow-md">
+          <div ref={cardRef} className="relative  dark:bg-white border border-gray-700 rounded-lg p-6 shadow-sm transition-all duration-200 hover:shadow-md">
             {}
             <div className="flex flex-col space-y-2 text-center mb-6">
-              <h1 className="text-2xl font-semibold tracking-tight  text-white">
+              <h1 className="text-2xl font-semibold tracking-tight ">
                Laissez Nous un Message
               </h1>
               <p className="text-sm text-muted-foreground">
@@ -120,7 +120,7 @@ const Contact = () => {
 <h1 className="text-4xl text-center font-bold tracking-tighter md:text-5xl lg:text-7xl ">
     <AuroraText>Contactez Nous</AuroraText>
     </h1>
-        <p className='text-white text-lg text-center'>Vous pouvez nous suivre sur nos differents reseaux si dessous</p>
+        <p className=' text-lg text-center'>Vous pouvez nous suivre sur nos differents reseaux si dessous</p>
         <div className="flex items-center justify-between mt-4 space-x-4">
           <div>
           <img src={social} alt="social" className="w-10 h-10" />

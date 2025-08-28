@@ -53,11 +53,11 @@ const GridBackground = () => {
 };
 export default function HeroSection() {
   //  const color=localStorage.getItem('theme')
-  return <div id="home" className={`relative w-full bg-black overflow-hidden flex flex-col items-center justify-center `}>
+  return <div id="home"  className={`relative w-full  overflow-hidden flex flex-col items-center justify-center `}>
       <GridBackground />
      <div className="flex flex-row items-center justify-between w-5/6 max-sm:w-full  max-sm:flex-col-reverse  max-sm:justify-center">
      <div className=" w-2/3 mt-2 max-sm:w-full max-sm:mx-auto max-sm:flex max-sm:items-center max-sm:flex-col max-sm:justify-center">
-      <div className="text-4xl font-bold text-white mb-2 max-sm:px-3 ">
+      <div className="text-4xl  font-bold mb-2 max-sm:px-3 ">
       Bienvenue à la RTVC {" "}
       <FlipWords
         words={["creating", "building", "designing", "crafting"]}
@@ -67,7 +67,7 @@ export default function HeroSection() {
       {" "}
       Porter la Parole aux nations par des contenus audio-visuels inspirés.
     </div>
-    <TextAnimate animation="blurIn" by="text" as="p" className="text-white mb-7 max-sm:mx-3">
+    <TextAnimate animation="blurIn" by="text" as="p" className=" mb-7 max-sm:mx-3">
      Un organisation basee dans plus the 150 nations.
     </TextAnimate>
     <a href="#contact">

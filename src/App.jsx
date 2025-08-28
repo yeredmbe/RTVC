@@ -7,11 +7,13 @@ import gsap from 'gsap';
 import Apropo from './pages/Apropo';
 import Contact from './pages/Contact';
 import TvEnDirect from './pages/TvEnDirect';
+import { useStore } from '../stores/usetheme';
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const { theme } = useStore();
   
 useEffect(() => {
   const handleLoad = () => {
@@ -31,10 +33,10 @@ useEffect(() => {
 
   if (isLoading) {
     return (
-      <div className="flex items-center justify-center h-screen bg-gradient-to-br bg-black">
+      <div data-theme={theme} className="flex items-center justify-center h-screen bg-gradient-to-br ">
         <div className="text-center">
           <div className="w-10 h-10 border-4 border-white border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-          <p className="text-white text-xl font-semibold">Chargement...</p>
+          <p className=" text-xl font-semibold">Chargement...</p>
         </div>
       </div>
     );
@@ -42,7 +44,7 @@ useEffect(() => {
 
   return (
     <>
-      <div className='fadeIn relative'>
+      <div className='fadeIn relative' data-theme={theme}>
         <Navbar/>
         <HeroSection/>
         <TvEnDirect/>
