@@ -101,7 +101,7 @@ const { theme, setTheme } = useStore();
     <nav  className='fixed top-0 left-0 w-full flex items-center py-4 justify-between z-40'>
      <div className='flex w-full items-center justify-between px-5'>
         <a href="#home" className="flex items-center gap-2">
-         <img src="/photo.png" alt="logo" className='size-12' />
+         <img src="./logo.jpg" alt="logo" className='size-12 rounded-full' />
          <p className=' text-2xl font-bold'>RTVC</p>
        
         </a>
